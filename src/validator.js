@@ -4,7 +4,7 @@ const validatorMiddlewareFactory = (requestDataField, JoiSchema) => {
   let middleware = (req, res, next) => {
     const data = req[requestDataField];
 
-    const result = Joi.validate(data, schema);
+    const result = Joi.validate(data, JoiSchema);
     if (result.error) res.status(400).send(result.error);
 
     return next();
@@ -12,3 +12,5 @@ const validatorMiddlewareFactory = (requestDataField, JoiSchema) => {
 
   return middleware;
 };
+
+module.exports = exports = validatorMiddlewareFactory;

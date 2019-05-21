@@ -1,6 +1,6 @@
 {
   "name": "@coobo/validate",
-  "version": "1.0.0-a",
+  "version": "1.0.1-a",
   "description": "Middleware responsible for validating incoming requests on express services",
   "main": "src/index.js",
   "repository": "git@github.com:Coobo/validator-middleware.git",
@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@hapi/joi": "^15.0.3",
-    "cpf-cnpj-validator": "^0.0.6"
+    "cpf-cnpj-validator": "^0.0.6",
+    "joi": "^14.3.1"
   }
 }

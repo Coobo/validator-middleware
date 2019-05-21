@@ -1,5 +1,5 @@
-const JoiBase = require('@hapi/joi');
-const documentValidator = require('cpf-cnpj-validator');
+const JoiBase = require('joi');
+const documentValidator = require('cpf-cnpj-validator').default;
 
 const Joi = JoiBase.extend(documentValidator);
 
